@@ -24,6 +24,8 @@ elif len(my_list) >= 2:
     print(my_list)
 
 
+
+
 ########################## 4
 
 value = input("Введи число:")
