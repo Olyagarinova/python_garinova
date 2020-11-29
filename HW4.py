@@ -60,7 +60,6 @@ for index in my_indexes:
 
 my_string = '0123456789'
 list = []
-# my_string = int(my_string)
 for symb_1 in my_string:
     for symb_2 in my_string:
         list.append(int(symb_1 + symb_2))
