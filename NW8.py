@@ -43,6 +43,7 @@ print(lastname)
 # Пример: miller.249@sgdyyur.com
 
 def generate_email():
+    """E-mail generation"""
     some_number = random.randint(100, 1000)
     some_string = ''.join(chr(random.randint(ord('a'), ord('z'))) for j in range(random.randint(5, 7)))
     email = random.choice(lastname) + '.' + str(some_number) + '@' + some_string + '.' + random.choice(domains)
