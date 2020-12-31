@@ -28,7 +28,7 @@ print(persons)
 # Если фамилии нет, то использовать имя, например Euclid.
 
 
-def sort_by_lastname_or_name(person):
+def sort_by_last_name_or_name(person):
 
     name = person["name"]
     name = name.split()
@@ -40,7 +40,7 @@ def sort_by_lastname_or_name(person):
     return name_new
 
 
-sort_persons_by_lastname_or_name = sorted(persons, key=sort_by_lastname_or_name)
+sort_persons_by_lastname_or_name = sorted(persons, key=sort_by_last_name_or_name)
 print(sort_persons_by_lastname_or_name)
 
 # ______________________________________________________________
@@ -48,7 +48,7 @@ print(sort_persons_by_lastname_or_name)
 # Обратите внимание на сокращение BC. - это означает до н.э.
 
 
-def sort_by_deathdate(person):
+def sort_by_death_date(person):
     deathdate = person["years"]
 
     if "BC" in deathdate:
@@ -63,7 +63,7 @@ def sort_by_deathdate(person):
     return result
 
 
-sort_persons_by_deathdate = sorted(persons, key=sort_by_deathdate)
+sort_persons_by_deathdate = sorted(persons, key=sort_by_death_date)
 print(sort_persons_by_deathdate)
 
 
