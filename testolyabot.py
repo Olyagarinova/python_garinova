@@ -5,7 +5,7 @@ bot = telebot.TeleBot('1545031066:AAEItl_xPAFS4Rc-gHVOWLIKcu11h5Kqe-g')
 
 @bot.message_handler(content_types=['text'])
 def get_text_messages(message):
-    if message.text == "Привет":
+    if message.text == "Привет" or message.text == "привет":
         bot.send_message(message.from_user.id, "Привет, Андрей")
     elif message.text == "/help":
         bot.send_message(message.from_user.id, "Эй ты, напиши привет")
